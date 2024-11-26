@@ -164,8 +164,11 @@ iframe {
     .container {
       flex-direction: column; /* Empilha os elementos */
     }
-    .indice {
-        font-size: 14px; 
+    header {
+        padding: 10px; /* Ajustar o padding do cabeçalho para caber em telas pequenas */
+    }
+    img {
+        width: 100%; /* As imagens ocupam toda a largura da tela */
     }
   }
   
@@ -174,8 +177,8 @@ iframe {
     body {
       font-size: 16px;
     }
-    .indice {
-        font-size: 16px; 
+    img {
+        width: 100%;
     }
   }
   
