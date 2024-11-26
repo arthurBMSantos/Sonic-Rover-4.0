@@ -1,0 +1,54 @@
+.nav-Q-S{
+    text-align: center;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+    background-color: #265e93;
+    margin-bottom: 100px;
+    margin-top: -10px;
+    padding: 8px;
+    margin-right: -50px;
+    margin-left: -10px;
+}
+li, a{
+    font-size: larger;
+    color:white;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 136px;
+    background-color: #265e93;
+    padding: 10px;
+}
+html,head,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+p{
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      flex-direction: column; /* Empilha os elementos */
+    }
+  }
+  
+  /* Para telas médias (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Para telas grandes (notebooks ou desktops) */
+  @media (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+  }

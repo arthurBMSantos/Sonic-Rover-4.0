@@ -1,0 +1,75 @@
+
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:  black;
+}
+html,head,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Estilo geral do contêiner */
+.text-container {
+    display: grid; /* Layout em grade */
+    grid-template-columns: 50px auto; /* Define largura das colunas */
+    gap: 10px; /* Espaço entre os elementos */
+    max-width: 300px; /* Limita a largura do contêiner */
+    margin: 20px auto; /* Centraliza o contêiner na página */
+}
+
+/* Estilo para as letras */
+.letter {
+    font-size: x-large;
+    font-weight: bold; /* Deixa as letras em negrito */
+    color: #dedcd8; /* Cor das letras */
+    text-align: center; /* Centraliza a letra na célula */
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20%;
+    width: 40px; /* Largura da borda */
+    height: 30px; /* Altura da borda */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: auto; /* Centraliza a borda na célula */
+    background-color: #265e93;
+
+}
+
+/* Estilo para as palavras */
+.word {
+    font-size: x-large;
+    color: black; /* Cor da palavra */
+    display: flex; /* Flexbox para alinhamento */
+    align-items: center; /* Alinha verticalmente ao centro */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: -10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    margin-left: 40%;
+}
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      flex-direction: column; /* Empilha os elementos */
+    }
+  }
+  
+  /* Para telas médias (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Para telas grandes (notebooks ou desktops) */
+  @media (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+  }

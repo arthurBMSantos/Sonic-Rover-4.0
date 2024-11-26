@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kjager Team</title>
+    <link rel="stylesheet" href="./css/layout/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header> <!--estruturas rápidas (abreviações Emmet) ex: header>nav>ul>li*4-->
+        <nav class="nav-menu">
+            <ul>
+                <li class="sonic">Sonic Rover</li>
+                <li class="indice"><a href="#quemSomos">Kjager <br>Team</a></li>
+                <li class="indice"><a href="#montagem">Projeto</a></li>
+                <li class="indice"><a href="#sobre">Equipe</a></li>
+
+            </ul>
+            <p><h1>Projeto Sonic Rover</h1></p>
+            <img class="img1" src="/css/lista_img/sonic rover.jpg" alt="sonic rover.jpg">
+        </nav>
+    </header>
+    <p><h2>Nós somos a Kjager Team e temos como projeto o Sonic Rover. Estamos participando da 3º edição do Campeonato Barsileiro de Véiculos Autônomos em Escala.</h2></p>
+
+
+
+
+
+    <div id="quemSomos" class="container">
+        <link rel="stylesheet" href="./css/layout/quem_somos.css">
+        <iframe src="quem_somos.html" height="800px"></iframe>
+
+    </div>
+
+
+
+    <div id="montagem" class="container">
+        <link rel="stylesheet" href="./css/layout/montagem.css">
+        <iframe src="montagem.html" onload="ajustarAlturaIframe(this)"></iframe>
+        <script>
+    
+
+            function ajustarAlturaIframe(iframe) {
+                // Verifica se o iframe existe e se seu conteúdo está acessível
+                if (iframe && iframe.contentWindow && iframe.contentWindow.document) {
+                    // Obtem a altura do conteúdo do iframe
+                    const alturaConteudo = iframe.contentWindow.document.body.scrollHeight;
+                    // Define a altura do iframe para se ajustar ao conteúdo
+                    iframe.style.height = alturaConteudo + "px"
+                }
+            }
+            function ajustarAlturaIframe(iframe) {
+                // Verifica se o iframe existe e se seu conteúdo está acessível
+                if (iframe && iframe.contentWindow && iframe.contentWindow.document) {
+                    // Obtem a altura do conteúdo do iframe
+                    const alturaConteudo = iframe.contentWindow.document.body.scrollHeight;
+                    // Define a altura do iframe para se ajustar ao conteúdo
+                    iframe.style.height = alturaConteudo + "px";
+                }
+            }
+        </script>
+    </div>
+
+
+    <div id="sobre" class="container">
+        <link rel="stylesheet" href="./css/layout/sobre.css">
+        <iframe src="sobre.html" height="800px"></iframe>
+    </div>
+</body>
+</html>

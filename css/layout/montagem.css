@@ -1,0 +1,104 @@
+.nav-montagem{
+    text-align: center;
+    justify-content: space-around;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.imgs {
+    display: flex; /* Ativa o layout Flexbox */
+    justify-content: space-between; /* Espaço igual entre as imagens */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre imagens */
+}
+
+.imgs img {
+    width: 200px; /* Define a largura das imagens */
+    height: auto; /* Mantém a proporção */
+    border: 2px solid #ccc; /* Adiciona borda */
+    border-radius: 8px; /* Cantos arredondados */
+}
+img, .img1{
+    height: 400px;
+    width: 400px;
+    margin-right: 50%;
+    margin-left: 37%;
+    border-width: 10;
+    border-left: 10;
+    border-top: 10;
+    border-bottom: 10;
+    border: solid;
+    border-color:#265e93;
+    border-radius: 20%;
+    display: inline-block;
+}
+.p1{
+    background-color: #ccc;
+    font-size: xx-large;
+}
+.texto{
+    color: black;
+    background-color: white;
+}
+.etapas{
+    font-size: 40px;
+    list-style: decimal;
+    color: #265e93;
+    background-color: #dedcd8;
+    margin-left: 20px;
+}
+.materiais{
+    font-size: 25px;
+    gap: 10px;
+    color: black;
+    list-style: decimal;
+    background-color: white;
+    
+}
+p{
+    font-size: 35px;
+    margin-left: 20px;
+
+}
+.passos-processo{
+    font-size: 25px;
+    gap: 10px;
+    color: black;
+    background-color: white;
+}
+html,head,body{
+    width: 100%;
+    overflow-x: hidden;
+    max-height: max-content;
+}
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      flex-direction: column; /* Empilha os elementos */
+    }
+  }
+  
+  /* Para telas médias (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Para telas grandes (notebooks ou desktops) */
+  @media (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+  }
