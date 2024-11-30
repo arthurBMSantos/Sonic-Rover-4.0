@@ -21,12 +21,7 @@ h1{
     gap: 20px; /* Espaçamento entre imagens */
 }
 
-.imgs img {
-    width: 200px; /* Define a largura das imagens */
-    height: auto; /* Mantém a proporção */
-    border: 2px solid #ccc; /* Adiciona borda */
-    border-radius: 8px; /* Cantos arredondados */
-}
+
 img, .img1{
     height: 400px;
     width: 400px;
@@ -87,12 +82,36 @@ html,head,body{
     .container {
       flex-direction: column; /* Empilha os elementos */
     }
+    .img1{
+        width: 95%;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .img2{
+        width: 78%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 1;
+    }
   }
   
   /* Para telas médias (tablets) */
-  @media (min-width: 769px) and (max-width: 1024px) {
+  @media (min-width: 769px) and (max-width: 1164px) {
     body {
       font-size: 16px;
+    }
+    .img1{
+        width: 95%;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .img2{
+        width: 78%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 1;
     }
   }
   

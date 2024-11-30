@@ -5,7 +5,7 @@
     padding: 10px;
     top: 0;
     left: 0;
-     width: 100%;
+    width: 100%;  /*1520px*/
     z-index: 1000;
 
 }
@@ -18,16 +18,24 @@
 
 
 
-/*ul{
+ul{
     display: flex;
     background-color: #265e93;
-    margin-bottom: 100px;
-    margin-top: -10px;
-    margin-right: -275px;
-    margin-left: -920px;
-    padding: 10px 900px;
-    max-width: max-content;
-}*/
+    margin-bottom: 6.58%;   /*100px*/
+    margin-top: -0.66%;     /*-10px*/
+    padding: 0.53%;   /*8px*/
+    margin-right: -60px;       /*-50px*/
+    margin-left: -0.66%;     /*-10px*/
+}
+li, a{
+    font-size: larger;
+    color:white;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 136px;         /*136px*/
+    background-color: #265e93;
+    padding: 10px;
+}
 
 
 .indice{
@@ -40,10 +48,10 @@
     margin-left: 310px;
     background-color: #265e93;
     padding: 8px;
-    margin-top: 18px;
-    flex-direction: column;*/
+    margin-top: 18px;*/
+    flex-direction: column;
     color:white;
-  
+    white-space: nowrap;
     background-color: #265e93;
     padding: 10px;
     margin-right: 50px;
@@ -66,6 +74,7 @@
     margin-left: 0px;
     background-color: #dedcd8;
     color: #265e93;
+    display: block;
 }
 
 
@@ -86,11 +95,12 @@ font-family: "NiseSegaSonic.TTF";
 
 
 
-img, .img1{
-    height: 400px;
-    width: 400px;
+.img-car_sonic{
+    height: 27%;
+    width: 27%;
     margin-right: 50%;
-    margin-left: 37%;
+    margin-left: 38%;
+    align-items: center;
     border-width: 10;
     border-left: 10;
     border-top: 10;
@@ -144,7 +154,8 @@ iframe {
 }
 
 .container {
-
+    display: flex;
+    flex-direction: row; /* Organiza o conteúdo em uma coluna */
     width: 100%; /* O container ocupa toda a largura da página */
     
     margin: 20px auto; /* Centraliza o container na página */
@@ -156,31 +167,143 @@ iframe {
 
     border-radius: 8px; /* Bordas arredondadas */
 }
+.nav-container {/*ESTILO PARA O ÍNDICE*/
+    display: flex;
+    flex-direction: row; /* Coloca os itens lado a lado */
+    justify-content: space-around; /* Espaço igual entre os itens */
+    align-items: flex-start; /* Alinha os itens no topo */
+    width: 100%; /* Garante que ocupe toda a largura */
+    max-width: 1200px; /* Limita a largura do contêiner */
+}
 
 @media (max-width: 768px) {
     body {
-      font-size: 14px;
+        font-size: 10px;
     }
-    .container {
-      flex-direction: column; /* Empilha os elementos */
+
+    /* Ajusta o menu para ser exibido em coluna e sem espaços excessivos */
+    .nav-menu {
+        width: 100%;
+        padding: 0;
+        flex-direction: column; /* Deixa o menu em coluna em telas pequenas */
+        justify-content: center; /* Centraliza os itens */
+        gap: 10px; /* Ajusta o espaçamento entre os itens */
     }
-    header {
-        padding: 10px; /* Ajustar o padding do cabeçalho para caber em telas pequenas */
+
+    .sonic{
+        margin-left: 1%;
+        margin-right: 0;
     }
-    img {
-        width: 100%; /* As imagens ocupam toda a largura da tela */
+    /* Estilo do índice - Ajuste de tamanho do texto */
+    .indice {
+        font-size: 24px; /* Ajusta o tamanho do título */
+        padding: 10px; /* Adiciona padding para espaçamento adequado */
+        width: 100%;
+        margin-left: 0; /* Remove margens à esquerda */
+        margin-right: 16%; /* Remove margens à direita */
+        margin-bottom: 10px; /* Cria espaço abaixo do título */
+        text-align: center; /* Centraliza o texto */
+        height: 55px;
     }
-  }
-  
-  /* Para telas médias (tablets) */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    body {
-      font-size: 16px;
-    }
-    img {
+
+    .nav-container {
+        flex-direction: column; /* Empilha os itens de navegação em coluna */
+        align-items: center; /* Centraliza os itens */
         width: 100%;
     }
-  }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column; /* Organiza a lista em coluna */
+        align-items: center; /* Centraliza os itens na coluna */
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+        margin: 5px 0; /* Ajusta a margem entre os itens */
+    }
+
+    /* Ajuste para as imagens (se necessário) */
+    .img-car_sonic {
+        width: 50%; /* Ajusta o tamanho da imagem */
+        margin: 0 auto; /* Centraliza a imagem */
+        border-radius: 15px; /* Bordas arredondadas */
+        align-items: center;
+        margin-left: 26%;
+    }
+    
+    .container {
+        flex-direction: column; /* Empilha o conteúdo */
+        align-items: center; /* Centraliza o conteúdo */
+        padding: 0 20px; /* Padding lateral */
+    }
+}
+  
+  /* Para telas médias (tablets) */
+  @media (min-width: 769px) and (max-width: 1164px) {
+    body {
+        font-size: 10px;
+    }
+
+    /* Ajusta o menu para ser exibido em coluna e sem espaços excessivos */
+    .nav-menu {
+        width: 100%;
+        padding: 0;
+        flex-direction: column; /* Deixa o menu em coluna em telas pequenas */
+        justify-content: center; /* Centraliza os itens */
+        gap: 10px; /* Ajusta o espaçamento entre os itens */
+    }
+
+    .sonic{
+        margin-left: -1%;
+        margin-right: 0;
+    }
+    /* Estilo do índice - Ajuste de tamanho do texto */
+    .indice {
+        font-size: 24px; /* Ajusta o tamanho do título */
+        padding: 10px; /* Adiciona padding para espaçamento adequado */
+        width: 100%;
+        margin-left: 0; /* Remove margens à esquerda */
+        margin-right: 15%; /* Remove margens à direita */
+        margin-bottom: 10px; /* Cria espaço abaixo do título */
+        text-align: center; /* Centraliza o texto */
+        height: 55px;
+    }
+
+    .nav-container {
+        flex-direction: column; /* Empilha os itens de navegação em coluna */
+        align-items: center; /* Centraliza os itens */
+        width: 100%;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column; /* Organiza a lista em coluna */
+        align-items: center; /* Centraliza os itens na coluna */
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+        margin: 5px 0; /* Ajusta a margem entre os itens */
+    }
+
+    /* Ajuste para as imagens (se necessário) */
+    .img-car_sonic {
+        width: 50%; /* Ajusta o tamanho da imagem */
+        margin: 0 auto; /* Centraliza a imagem */
+        border-radius: 15px; /* Bordas arredondadas */
+        align-items: center;
+        margin-left: 26%;
+    }
+    
+    .container {
+        flex-direction: column; /* Empilha o conteúdo */
+        align-items: center; /* Centraliza o conteúdo */
+        padding: 0 20px; /* Padding lateral */
+    }
+}
   
   /* Para telas grandes (notebooks ou desktops) */
   @media (min-width: 1025px) {
@@ -188,6 +311,3 @@ iframe {
       font-size: 18px;
     }
   }
-
-
- 
